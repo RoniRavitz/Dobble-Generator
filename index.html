@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dobble Generator</title>
+    <meta name="description" content="Dobble Generator" />
+    <meta name="author" content="Roni Ravitz" />
+
+    <meta property="og:title" content="Dobble Generator" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="Dobble Generator" />
+    <meta property="og:image" content="image.png" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>משחק דאבל בעיצוב אישי</h1>
+    <p>
+      <b>הוראות</b>
+      <br />
+      יש להעלות 30 תמונות מהמחשב
+      <br />
+      (מומלץ קודם ההעלאה לחתוך את התמונות ליחס מרובע, אחרת זה ייחתך אוטומטית)
+      <br />
+      לאחר מכן יש ללחוץ על הכפתור Generate
+      <br />
+      ואז על הכפתור Print Game
+    </p>
+
+    <div class="images-upload">
+      <!-- Keep your 30 file input elements here -->
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+      <div>
+        <img class="input-preview" />
+        <input type="file" />
+      </div>
+    </div>
+    <div class="btn-wrap">
+      <button type="button" id="generate-btn">Generate</button>
+      <button type="button" id="print-btn">Print Game</button>
+    </div>
+    <div class="game-output-wrap">
+      <div class="game-output">
+        <!-- Keep your 30 card div elements here -->
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

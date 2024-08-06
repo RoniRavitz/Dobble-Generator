@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --black: #000000;
+  --white: #ffffff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+img {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+body {
+  background-color: var(--backgrond);
+  color: var(--black);
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Noto Sans Hebrew", sans-serif;
+}
+h1,
+p {
+  text-align: center;
+  margin: 8px 0;
+  direction: rtl;
+}
+.images-upload {
+  display: grid;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  gap: 8px;
+  padding: 8px;
+}
+.input-preview {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: solid 1px var(--black);
+  object-fit: cover;
+}
+.images-upload > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.images-upload input {
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  max-width: 5%;
+}
+.btn-wrap {
+  display: flex;
+  padding: 16px;
+  gap: 8px;
+  justify-content: center;
+}
+button {
+  padding: 8px;
+}
+.game-output-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game-output {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 8px;
+  row-gap: 18px;
+  max-width: 700px;
+  width: 100%;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  padding: 16px;
+  border: solid 2px var(--black);
+  background-color: var(--white);
+}
+.card .img {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: solid 1px var(--black);
+  object-fit: cover;
+}
